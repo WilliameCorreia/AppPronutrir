@@ -4,7 +4,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler'
 
 export default function login({ navigation }) {
     return (
-        <View>
+        <View style={styles.container}>
             <Text>Login</Text>
             <TouchableOpacity onPress={() => navigation.navigate('Cadastro')}>
                 <Text>click me</Text>
@@ -13,4 +13,10 @@ export default function login({ navigation }) {
     )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container:{
+        flex: 1, 
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
+})

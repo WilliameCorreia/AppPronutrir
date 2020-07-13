@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "621115720128",
+    "firebase_url": "https://apppronutrir.firebaseio.com",
+    "project_id": "apppronutrir",
+    "storage_bucket": "apppronutrir.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621115720128:android:331a3c0d767afbcb570825",
+        "android_client_info": {
+          "package_name": "com.apppronutrir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621115720128-4ugej166tb59mcl3rmiqbfh4ncsjt8l6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsnOxChIyblfg02Nkzntw3AI5IlUpSrU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621115720128-4ugej166tb59mcl3rmiqbfh4ncsjt8l6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
