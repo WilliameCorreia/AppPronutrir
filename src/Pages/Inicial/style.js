@@ -5,7 +5,11 @@ const styles = StyleSheet.create({
         flex: 1,
         //backgroundColor: 'red'
     },
-    box:{
+    box1:{
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    box2:{
         justifyContent: 'center',
         alignItems: 'center'
     },
