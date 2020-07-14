@@ -14,11 +14,8 @@ export default function appRoutes() {
                 name={"Home"}
                 component={Home}
             />
-            <AppStack.Screen
-                name={"Cadastro"}
-                component={Cadastro}
-            />
         </AppStack.Navigator>
+        
     )
 }
 

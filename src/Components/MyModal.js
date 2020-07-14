@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
         fontSize: 16
     },
     openButton: {
-        backgroundColor: "#FF7223",
+        backgroundColor: "#00a1a3",
         borderRadius: 10,
         elevation: 5,
         marginBottom:20,
