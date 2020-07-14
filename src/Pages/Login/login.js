@@ -17,6 +17,7 @@ import auth from '@react-native-firebase/auth'
 import MyModal from '../../Components/MyModal'
 
 import styles from './style'
+import { ScrollView } from 'react-native-gesture-handler'
 
 export default function login({ navigation }) {
 
@@ -74,12 +75,13 @@ export default function login({ navigation }) {
         <KeyboardAvoidingView style={styles.container}>
             <View style={styles.box1}>
                 <Image source={require('../../assets/Imagens/unnamed.png')} style={styles.image_logo} />
+                {loading ? <ActivityIndicator size={"large"} color={'#00a1a3'}></ActivityIndicator> : <Text></Text>}
             </View>
             <View style={styles.box2}>
                 <View style={styles.SectionStyle}>
                     <Icon
                         style={styles.icon}
-                        //rrname='ios-contact'
+                        //name='ios-contact'
                         type='ionicon'
                         size={40}
                         color={'#fff'}
