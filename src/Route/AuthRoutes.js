@@ -40,11 +40,6 @@ const AuthRoutes = () => {
         component={Cadastro}
         options={{title: 'Cadastro'}}
       />
-      <StackNavigator.Screen
-        name={"Inicial"}
-        component={Inicial}
-        options={{headerShown: false}}
-      />
     </StackNavigator.Navigator>
   )
 }

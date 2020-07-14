@@ -1,9 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet} from 'react-native';
 
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../Pages/Home/home';
-import Cadastro from '../Pages/Cadastro/cadastro'
 
 const AppStack = createStackNavigator();
 

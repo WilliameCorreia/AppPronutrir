@@ -10,9 +10,8 @@ export default function MyBackButton({ onPress }) {
             <TouchableOpacity  onPress={onPress}>
                 <Icon
                     style={styles.icon}
-                    raised
                     reverse={true}
-                    //name='md-arrow-round-back'
+                    name='add-circle-outline'
                     type='ionicon'
                     color='transparent'
                     size={20}

@@ -1,12 +1,17 @@
 import React from 'react'
+import { StatusBar } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 
-import Routes from '../src/Route/Index'
+import Routes from './Route/Index'
+import { AuthProvider } from './Contexts/Auth'
 
 const index = () => {
     return (
         <NavigationContainer>
-            <Routes/>
+            <AuthProvider>
+            <StatusBar backgroundColor={'#fff'} barStyle='dark-content' translucent={true} />
+                <Routes/>
+            </AuthProvider>
         </NavigationContainer>
     )
 }
