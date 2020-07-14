@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 
-import AppRoute from '../Route/appRoutes';
 import AuthRoute from '../Route/AuthRoutes';
+import Drawer from '../Route/DrawerRoute';
 import AuthContext from '../Contexts/Auth';
-import Inicial from '../Pages/Inicial/inicial'
+import Inicial from '../Pages/Inicial/inicial';
 
 
 const Index = () => {
@@ -18,7 +18,7 @@ const Index = () => {
 
     return (
 
-        signed ? <AppRoute/> : <AuthRoute />
+        signed ? <Drawer/> : <AuthRoute />
         
     )
 }
