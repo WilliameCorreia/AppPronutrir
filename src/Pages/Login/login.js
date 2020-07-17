@@ -27,13 +27,13 @@ export default function login({ navigation }) {
     const [modalActive, setModalActive] = useState(false);
     const [msnModal, setMsnModal] = useState('primeira passada');
 
-    autenticar = () => {
+    const autenticar = () => {
         setloading(true)
         if (usuario && password) {
             auth()
                 .signInWithEmailAndPassword(usuario, password)
-                .then(() => {
-                    console.log('autenticado')
+                .then(dados => {
+                    console.log(dados)
                 })
                 .catch(error => {
                     switch (error.code) {

@@ -1,6 +1,7 @@
 import React, { createContext, useState, useEffect } from "react";
 
 import auth from '@react-native-firebase/auth';
+import api from "../Services/api";
 
 const AuthContext = createContext({ signed: false })
 
@@ -12,14 +13,22 @@ export const AuthProvider = ({ children }) => {
     async function signIn(user) {
         setTimeout(() =>{
             if(user){
+                getUsuario(user)
                 const { email, uid } = user;
                 setUsuario({ email, uid })
-                setLoading(false);
+                
             }else{
                 setLoading(false);
                 setUsuario({ email: null })
             }
         },2000)
+    }
+
+    async function getUsuario(user){
+        const { email, uid } = user;
+        api.get(`Usuario/${uid}`).then(response =>{
+            setLoading(false);
+        })
     }
 
     useEffect(() => {
@@ -28,8 +37,6 @@ export const AuthProvider = ({ children }) => {
             subscribe;
         }
     }, [])
-
-    console.log("*************************")
     
     return (
         <AuthContext.Provider value={{ signed: Boolean(usuario.email), signIn, usuario, loading }}>

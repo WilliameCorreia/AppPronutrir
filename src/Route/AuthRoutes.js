@@ -20,11 +20,12 @@ const AuthRoutes = () => {
           const { options } = scene.descriptor;
           const title = options.headerTitle !== undefined ? options.headerTitle : options.title !== undefined ? options.title : scene.route.name;
           const backColor = options.headerStyle
+
           return (
             <MyHeader
               title={title}
               color={"#00a1a3"}
-              leftButton={<MyBackButton onPress={() => navigation.goBack()} />}
+              leftButton={ title == "Login" ? null : <MyBackButton onPress={() => navigation.goBack()} />}
             />
           )
         }

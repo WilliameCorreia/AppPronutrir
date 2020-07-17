@@ -38,6 +38,9 @@ const styles = StyleSheet.create({
         width: (Dimensions.get('window').width / 6),
         height: (Dimensions.get('window').height / 10),
         margin: 20
+    },
+    textErro:{
+        color: 'red'
     }
 })
 
